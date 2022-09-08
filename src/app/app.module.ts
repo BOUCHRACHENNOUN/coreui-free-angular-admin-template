@@ -45,6 +45,9 @@ import {
 } from '@coreui/angular';
 
 import { IconModule, IconSetService } from '@coreui/icons-angular';
+import { DemandeBureautiqueComponent } from './containers/default-layout/dami/demande-bureautique/demande-bureautique.component';
+import { DemandeMaterialComponent } from './containers/default-layout/dami/demande-material/demande-material.component';
+import { AccesApplicatifComponent } from './containers/default-layout/dami/acces-applicatif/acces-applicatif.component';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
@@ -57,7 +60,7 @@ const APP_CONTAINERS = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, ...APP_CONTAINERS],
+  declarations: [AppComponent, ...APP_CONTAINERS, DemandeBureautiqueComponent, DemandeMaterialComponent, AccesApplicatifComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

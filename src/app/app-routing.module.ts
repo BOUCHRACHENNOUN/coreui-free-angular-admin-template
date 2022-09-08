@@ -1,4 +1,7 @@
-import { NgModule } from '@angular/core';
+import { AccesApplicatifComponent } from './containers/default-layout/dami/acces-applicatif/acces-applicatif.component';
+import { DemandeMaterialComponent } from './containers/default-layout/dami/demande-material/demande-material.component';
+import { DemandeBureautiqueComponent } from './containers/default-layout/dami/demande-bureautique/demande-bureautique.component';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { DefaultLayoutComponent } from './containers';
@@ -70,6 +73,9 @@ const routes: Routes = [
         loadChildren: () =>
           import('./views/pages/pages.module').then((m) => m.PagesModule)
       },
+      {path:"demandeBureuatique",component:DemandeBureautiqueComponent},
+      {path:"demandeMateriel",component:DemandeMaterialComponent},
+      {path:"accesAppli",component:AccesApplicatifComponent}
     ]
   },
   {
